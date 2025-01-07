@@ -44,3 +44,5 @@ class TextNode():
             
             case _:
                 raise ValueError(f"Invalid text type: {self.text_type}")
+            
+    
