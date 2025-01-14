@@ -1,6 +1,6 @@
 from textnode import TextNode,TextType
 from copystatic import clean_directory, copy_directory
-from markdown_blocks import generate_page
+from generate_content import generate_page
 
 def main():
     source = 'static'
