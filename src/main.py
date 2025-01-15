@@ -1,6 +1,6 @@
 from textnode import TextNode,TextType
 from copystatic import clean_directory, copy_directory
-from generate_content import generate_page
+from generate_content import generate_pages_recursive
 
 def main():
     source = 'static'
@@ -12,7 +12,7 @@ def main():
     print(f'Copying contents from {source} to {destination}...')
     copy_directory(source, destination)
 
-    generate_page("content/index.md", "template/template.html", "public/index.html")
+    generate_pages_recursive("content", "template/template.html", "public")
 
 
 if __name__ == "__main__":
